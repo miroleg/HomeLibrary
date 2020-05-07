@@ -21,7 +21,7 @@ public class Book {
         private String author;
 
         @Enumerated(EnumType.STRING)
-        private BookType shipType;
+        private BookType bookType;
 
         private Date prodDate;
 
@@ -55,6 +55,8 @@ public class Book {
             this.shipType = shipType;
         }
 
+ */
+
         public Date getProdDate() {
             return prodDate;
         }
@@ -70,7 +72,7 @@ public class Book {
         public void setUsed(Boolean used) {
             isUsed = used;
         }
-
+/*
         public Double getSpeed() {
             return speed;
         }
@@ -87,6 +89,8 @@ public class Book {
             this.crewSize = crewSize;
         }
 
+
+ */
         public Double getRating() {
             return rating;
         }
