@@ -64,3 +64,25 @@ values ('Orion III', 'Mars', 'MERCHANT', '2995-01-01', true, 0.82, 617, 1.31)
      , ('Nostromo', 'Saturn', 'MERCHANT', '2991-01-01', true, 0.31, 1967, 0.43)
      , ('Tardis', 'Jupiter', 'MERCHANT', '3016-01-01', false, 0.86, 4871, 17.20)
      , ('Star Destroyer', 'Mercury', 'MILITARY', '3017-01-01', false, 0.92, 4880, 24.53);
+
+DROP TABLE IF EXISTS book;
+
+CREATE TABLE book
+(
+    id       BIGINT(20)  NOT NULL AUTO_INCREMENT,
+    name     VARCHAR(50) NULL,
+    author   VARCHAR(50) NULL,
+    bookType VARCHAR(9)  NULL,
+    prodDate date        NULL,
+    isUsed   BIT(1)      NULL,
+    bookcase  INT(4)      NULL,
+    bookshelf INT(4)      NULL,
+    rating    DOUBLE      NULL,
+    PRIMARY KEY (id)
+)
+    ENGINE = InnoDB
+    DEFAULT CHARACTER SET = utf8;
+
+insert into book(name, author, bookType, prodDate, isUsed, bookcase, bookshelf, rating)
+values ('Orion III', 'Mars', 'DETECTIVE', '2995-01-01', true, 2, 617, 1.31)
+     , ('Orion I', 'Venus', 'ROMAN', '2995-01-01', true, 2, 617, 1.31);

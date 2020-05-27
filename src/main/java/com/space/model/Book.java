@@ -101,15 +101,15 @@ public class Book {
 /*
     @Override
     public String toString() {
-        return "Ship{" +
+        return "Book{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", planet='" + planet + '\'' +
-                ", shipType=" + shipType +
+                ", author='" + author + '\'' +
+                ", bookType=" + bookType +
                 ", prodDate=" + prodDate +
                 ", isUsed=" + isUsed +
-                ", speed=" + speed +
-                ", crewSize=" + crewSize +
+                ", bookcase=" + bookcase +
+                ", bookshelf=" + bookshelf +
                 ", rating=" + rating +
                 '}';
     }
